@@ -134,16 +134,39 @@ html,
 body {
   height: 100%;
   margin: 0 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    margin: 1rem;
+  }
 }
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+  }
+}
 nav a {
   text-decoration: none;
   margin: 4%;
   color: black;
+}
+@media (max-width: 500px) {
+  nav a {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 main .cta-section {
   background-color: lightgray;
@@ -154,8 +177,18 @@ main .cta-section img {
   max-width: 30%;
   max-height: 30%;
 }
+@media (max-width: 500px) {
+  main .cta-section img {
+    display: none;
+  }
+}
 main .cta-section h1 {
   font-size: 5vh;
+}
+@media (max-width: 500px) {
+  main .cta-section h1 {
+    font-size: 2rem;
+  }
 }
 main .cta-section p {
   margin: 3% 0;
@@ -169,12 +202,27 @@ main .cta-section .cta-btn {
   font-weight: bold;
   box-shadow: none;
 }
+main .cta-section .cta-btn:hover {
+  background-color: burlywood;
+  color: black;
+}
 main .middle-content {
   display: flex;
   margin-top: 2rem;
 }
+@media (max-width: 500px) {
+  main .middle-content {
+    flex-direction: column;
+  }
+}
 main aside {
   width: 50%;
+}
+@media (max-width: 500px) {
+  main aside {
+    width: 100%;
+    margin: 1em 0;
+  }
 }
 main .left-article p {
   padding-right: 5rem;
@@ -229,6 +277,12 @@ footer {
   justify-content: center;
   background-color: #838383;
   padding: 2rem;
+  margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  footer {
+    padding: 1rem;
+  }
 }
 footer p {
   color: white;
